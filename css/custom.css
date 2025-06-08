@@ -3,6 +3,7 @@ body, html {
     height: 100%;
     margin: 0px;
 	padding: 0px;
+    background-image: url("../assets/8523857.png");
 }
 
 header {
@@ -126,7 +127,6 @@ nav {
 }
 
 .section1 {
-    background-image: url("../assets/8523857.png");
     padding-top: 30px;
 }
 
@@ -185,7 +185,6 @@ nav {
 
 .galeria-sala {
     display: flex;
-    background-image: url("../assets/8523857.png");
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -237,7 +236,6 @@ nav {
 
 .section3 {
     padding: 30px 0px;
-    background-image: url("../assets/8523857.png");
 }
 
 .seccion3 {
@@ -303,7 +301,7 @@ nav {
 
 footer {
     background-color: #2b2b2b;
-    padding: 35px 0;
+    padding: 25px 0;
 }
 
 .footer {
@@ -338,6 +336,24 @@ footer {
     filter: brightness(0) saturate(100%) invert(99%) sepia(14%) saturate(2%) hue-rotate(344deg) brightness(110%) contrast(100%);
     width: 28px;
     height: auto;
+}
+
+.copy {
+    border-top: 1px solid #4B5563;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #2b2b2b;
+    color: #9CA3AF;
+}
+
+.copy span {
+    color: #60A5FA;
+    font-weight: 600;
+}
+
+.copy p {
+    margin: 0;
 }
 
 #animado {
@@ -645,15 +661,6 @@ button#btn-ir-arriba {
     color: #999;
     font-size: 14px;
 }
-    
-footer {
-    background-color: #2b2b2b;
-    padding: 30px;
-}
-    
-.footer {
-    width: 90%;
-}
 
 .footerx2 {
     flex-direction: column;
@@ -824,7 +831,6 @@ nav {
 }
     
 .section1 {
-    background-image: url("../assets/8523857.png");
     padding-top: 90px;
 }
 
@@ -845,7 +851,6 @@ nav {
 
 .section3 {
     padding: 20px 0px;
-    background-image: url("../assets/8523857.png");
 }
 
 .seccion3 {

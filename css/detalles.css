@@ -1,6 +1,7 @@
 body, html {
     width: 100%;
     height: 100%;
+    background-image: url("../assets/8523857.png");
 }
 
 .btn-whatsapp {
@@ -61,7 +62,6 @@ nav {
 
 .sesion2 {
     padding: 78.9px 0px;
-    background-image: url("../assets/8523857.png");
 }
 
 header {
@@ -192,7 +192,7 @@ header {
 
 footer {
     background-color: #2b2b2b;
-    padding: 35px 0;
+    padding: 25px 0;
 }
 
 .footer {
@@ -227,6 +227,24 @@ footer {
     filter: brightness(0) saturate(100%) invert(99%) sepia(14%) saturate(2%) hue-rotate(344deg) brightness(110%) contrast(100%);
     width: 28px;
     height: auto;
+}
+
+.copy {
+    border-top: 1px solid #4B5563;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #2b2b2b;
+    color: #9CA3AF;
+}
+
+.copy span {
+    color: #60A5FA;
+    font-weight: 600;
+}
+
+.copy p {
+    margin: 0;
 }
 
 .img{
@@ -321,7 +339,7 @@ footer {
 
 footer {
     background-color: #2b2b2b;
-    padding: 30px;
+    padding: 25px;
 }
     
 .footer {
@@ -546,6 +564,5 @@ footer {
 
 .sesion2 {
     padding: 85px 0px;
-    background-image: url("../assets/8523857.png");
 }
 }
