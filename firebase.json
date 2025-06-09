@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "mostrario-abc67",
     "public": "./",
     "ignore": [
       "firebase.json",

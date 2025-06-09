@@ -81,13 +81,18 @@ header {
 .header-contacto ul li {
     display: inline-block;
     list-style: none;
-    padding-left: 20px;
+    margin-right: 20px;
     font-family: 'Anton', sans-serif;
     letter-spacing: .2;
 }
 
 .header-contacto {
     display: inline-block;
+}
+
+i {
+    font-size: 25px;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(13%) saturate(19%) hue-rotate(352deg) brightness(106%) contrast(109%);
 }
 
 .header-container {

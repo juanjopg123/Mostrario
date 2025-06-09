@@ -40,8 +40,9 @@ header {
     font-family: 'Anton', sans-serif;
 }
 
-.header-contacto i {
+i {
     font-size: 25px;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(13%) saturate(19%) hue-rotate(352deg) brightness(106%) contrast(109%);
 }
 
 .img-icon img {
