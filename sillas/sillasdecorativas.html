@@ -26,13 +26,15 @@
 </head>
 <body>
 
-<button id="btn-ir-arriba"><img src="../assets/navegar-flecha-hacia-arriba.png" class="flecha-arriba" alt=""></button>
+<button id="btn-ir-arriba"><i class="fa-solid fa-angle-up"></i></button>
 
 <nav class="nav-movil">
-    <div class="logo-movil">
+    <div class="nav-movil-container">
         <a href="../index.html"><img class="logo-mob" src="../assets/iconnegro.png" alt=""></a>
-        <img class="logo-hambur" src="../assets/menu-hambur.png" alt="">
-        <img class="logo-error" src="../assets/error.png" alt="">
+        <div class="iconos-menu">
+            <i class="fa-solid fa-bars logo-hambur"></i>
+            <i class="fa-solid fa-xmark logo-error" style="display: none;"></i>
+        </div>
     </div>
     <ul class="menu-movil">
         <li><a href="../index.html">Inicio</a></li>
@@ -139,14 +141,11 @@
 </div>
 
 <a href="https://api.whatsapp.com/send?phone=573052792408" target="_blank" id="boton-whatsapp">
-    <img src="../assets/whatsapp.png" alt="" class="btn-whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 <a href="https://www.instagram.com/muebless_1059/" target="_blank" id="boton-instagram">
     <img src="../assets/instagram.png" alt="" class="btn-instagram">
 </a>
-
-<div id="ultimo"></div>
-
 </body>
 </html>

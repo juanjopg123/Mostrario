@@ -25,19 +25,25 @@ $(document).ready(function() {
 
   $(document).ready(function() {
     $(".menu-movil").hide();
-  
-    $(".logo-movil .logo-hambur").click(function() {
-      $(".menu-movil").slideToggle("li");
-      $(".logo-movil .logo-hambur").toggle();
-      $(".logo-movil .logo-error").toggle();
+
+    $(".nav-movil-container .logo-hambur").click(function() {
+        $(".menu-movil").slideToggle();
+        $(".nav-movil-container .logo-hambur").toggle();
+        $(".nav-movil-container .logo-error").toggle();
     });
-  
-    $(".logo-movil .logo-error").click(function() {
-      $(".menu-movil").slideToggle("li");
-      $(".logo-movil .logo-hambur").toggle();
-      $(".logo-movil .logo-error").toggle();
+
+    $(".nav-movil-container .logo-error").click(function() {
+        $(".menu-movil").slideToggle();
+        $(".nav-movil-container .logo-hambur").toggle();
+        $(".nav-movil-container .logo-error").toggle();
     });
-  });
+
+    $(".menu-movil li").click(function() {
+        $(".menu-movil").slideUp();
+        $(".nav-movil-container .logo-hambur").show();
+        $(".nav-movil-container .logo-error").hide();
+    });
+});
   
 
 $("li a").hover(
@@ -81,3 +87,13 @@ function mostrarScroll() {
 }
 
 window.addEventListener('scroll', mostrarScroll);
+
+// Preloader Cargar Logo
+window.addEventListener("load", function() {
+  setTimeout(function() {
+    document.getElementById("preloader").style.opacity = "0";
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+    }, 500);
+  }, 1000);
+});
