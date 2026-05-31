@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Mostrario</title>
+    <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/productos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6e9e7e3823.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <!-- JS -->
+    <script src="./js/custom.js" defer></script>
+    <script src="./js/productos.js" defer></script>
+    <!-- icono pestaña -->
+    <link rel="icon" href="./assets/iconnegro.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <button id="btn-ir-arriba"><i class="fa-solid fa-angle-up"></i></button>
+
+    <nav class="nav-movil">
+        <div class="nav-movil-container">
+            <a href="./index.html"><img class="logo-mob" src="./assets/iconnegro.png" alt="Logo Mostrario"></a>
+            <div class="iconos-menu">
+                <i class="fa-solid fa-bars logo-hambur"></i>
+                <i class="fa-solid fa-xmark logo-error" style="display: none;"></i>
+            </div>
+        </div>
+        <ul class="menu-movil">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./productos.html?categoria=sofas">Sofás</a></li>
+            <li><a href="./productos.html?categoria=salas">Salas</a></li>
+            <li><a href="./productos.html?categoria=esquineros">Esquineros</a></li>
+            <li><a href="./productos.html?categoria=camas">Camas</a></li>
+            <li><a href="./productos.html?categoria=espaldares">Espaldares</a></li>
+            <li><a href="./productos.html?categoria=sillas">Sillas</a></li>
+            <li><a href="./productos.html?categoria=comedores">Comedores</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header">
+            <div class="header-container">
+                <div class="img-icon">
+                    <a href="./index.html"><img src="./assets/iconnegro.png" alt="Logo Mostrario"></a>
+                </div>
+                <div class="header-contacto">
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> 3052792408</li>
+                        <li><i class="fa-solid fa-envelope"></i> mostrario1059@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sub-header">
+        <div class="sub-header-container">
+            <div class="row">
+                <div class="sub-header-content">
+                    <ul>
+                        <li><a href="./index.html">
+                                <div><img src="./assets/casa-icono-silueta.png" alt=""></div> Inicio
+                            </a></li>
+                        <li><a href="./productos.html?categoria=sofas">
+                                <div><img src="./assets/logo.png" alt=""></div> Sofás
+                            </a></li>
+                        <li><a href="./productos.html?categoria=salas">
+                                <div><img src="./assets/sala.png" alt=""></div> Salas
+                            </a></li>
+                        <li><a href="./productos.html?categoria=esquineros">
+                                <div><img src="./assets/esquinero.png" alt=""></div> Esquineros
+                            </a></li>
+                        <li><a href="./productos.html?categoria=camas">
+                                <div><img src="./assets/cama.png" alt=""></div> Camas
+                            </a></li>
+                        <li><a href="./productos.html?categoria=espaldares">
+                                <div><img src="./assets/espaldar.png" alt=""></div> Espaldares
+                            </a></li>
+                        <li><a href="./productos.html?categoria=sillas">
+                                <div><img src="./assets/silla.png" alt=""></div> Sillas
+                            </a></li>
+                        <li><a href="./productos.html?categoria=comedores">
+                                <div><img src="./assets/mesa.png" alt=""></div> Comedores
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="productos-section">
+            <div class="productos-container">
+                <h1 id="titulo-categoria"></h1>
+                <div id="contenedor-productos" class="productos-grid">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footerx2">
+                <div class="footer-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>3052792408</p>
+                </div>
+                <div class="footer-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Cll 60 # 55 a 73, Itagui</p>
+                </div>
+                <div class="footer-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>mostrario1059@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copy">
+        <p>
+            Copyright ©2020 All rights reserved by:
+            <span><a href="https://github.com/juanjopg123" target="_blank">juanjopg123</a></span>
+        </p>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=573052792408" target="_blank" id="boton-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/muebless_1059/" target="_blank" id="boton-instagram">
+        <img src="./assets/instagram.png" alt="" class="btn-instagram">
+    </a>
+
+</body>
+
+</html>

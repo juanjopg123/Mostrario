@@ -1,5 +1,6 @@
 /* CSS Variables */
 :root {
+<<<<<<< HEAD
   --filter-white: invert(100%) sepia(50%) saturate(275%) hue-rotate(320deg) brightness(105%) contrast(105%);
   --filter-icon: brightness(0) saturate(100%) invert(99%) sepia(13%) saturate(19%) hue-rotate(352deg) brightness(106%) contrast(109%);
   --filter-hover: invert(17%) sepia(21%) saturate(2352%) hue-rotate(321deg) brightness(96%) contrast(93%);
@@ -7,6 +8,16 @@
 
 /* Global Styles */
 body, html {
+=======
+    --filter-white: invert(100%) sepia(50%) saturate(275%) hue-rotate(320deg) brightness(105%) contrast(105%);
+    --filter-icon: brightness(0) saturate(100%) invert(99%) sepia(13%) saturate(19%) hue-rotate(352deg) brightness(106%) contrast(109%);
+    --filter-hover: invert(17%) sepia(21%) saturate(2352%) hue-rotate(321deg) brightness(96%) contrast(93%);
+}
+
+/* Global Styles */
+body,
+html {
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
     width: 100%;
     height: 100%;
     margin: 0;
@@ -14,19 +25,23 @@ body, html {
     background-image: url("../assets/8523857.png");
 }
 
+<<<<<<< HEAD
 header {
     background-color: #472825;
+=======
+/* ===================== DESTACADOS ===================== */
+
+.destacados-section {
+    padding: 30px 0;
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
 }
 
-nav {
-    display: none;
-}
-
-.header {
+.destacados-container {
     width: 90%;
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .header-contacto li {
     color: #fff;
     font-size: 18px;
@@ -203,73 +218,134 @@ i {
 
 .galeria-sala {
     display: flex;
-    justify-content: center;
+=======
+.destacados-titulo h2 {
+    display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 40px 0 10px;
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0 auto 30px;
+    font-family: 'Anton', sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(270deg, #5a2d1d, #8b5e3c, #c8a27a, #5a2d1d);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: movimiento 5s ease infinite;
 }
 
-.imagen-grande img {
-  width: 500px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+.destacados-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
 }
 
-.imagenes-pequenas {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
-
-.imagenes-pequenas img {
-  width: 250px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.seccion22 {
+.destacados-card {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 16px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 30px;
-    text-align: center;
-    color: #000;
-    background: rgba(255,255,255,.7);
-    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.destacados-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.destacados-img {
+    position: relative;
     overflow: hidden;
-    cursor: default;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    transition: all 400ms ease;
+    background: #fff;
+    padding: 12px 12px 0 12px;
 }
 
-.seccion22:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-2%);
+.destacados-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.45s ease;
 }
 
-.section3 {
-    padding: 30px 0px;
+.destacados-card:hover .destacados-img img {
+    transform: scale(1.03);
 }
 
-.seccion3 {
-    width: 90%;
-    margin: 0 auto;
+.destacados-overlay {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.seccion-cuadros3 {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
+.destacados-img:hover .destacados-overlay {
+    opacity: 1;
 }
 
-.seccion3 h2 {
+.destacados-overlay a {
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 22px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.destacados-overlay a:hover {
+    background: #fff;
+    color: #472825;
+}
+
+.destacados-info {
+    padding: 14px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.destacados-categoria {
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #999;
+    margin: 0 0 4px;
+}
+
+.destacados-nombre {
+    font-size: 16px;
+    font-family: 'Anton', sans-serif;
+    color: #1f1f1f;
+    letter-spacing: 0.5px;
+    margin: 0 0 12px;
+}
+
+.destacados-footer {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1190px;
@@ -302,11 +378,23 @@ i {
 
 .descripcion {
     margin: 10px 0;
-    font-size: 20px;
-    color: #000;
-    font-family: 'Anton', sans-serif;
+=======
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
 }
 
+.destacados-precio {
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    color: #472825;
+    margin: 0;
+    line-height: 1;
+}
+
+<<<<<<< HEAD
 .precio {
     margin: 10px 0;
     font-size: 18px;
@@ -317,36 +405,68 @@ i {
 footer {
     background-color: #733E39;
     padding: 25px 0;
+=======
+.destacados-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1.5px solid #472825;
+    background: transparent;
+    color: #472825;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-.footer {
+.destacados-btn:hover {
+    background: #472825;
+    color: #fff;
+    text-decoration: none;
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
+}
+
+/* ===================== INSPIRACION ===================== */
+
+.inspiracion-section {
+    padding: 20px 0 30px;
+}
+
+.inspiracion-container {
     width: 90%;
     margin: 0 auto;
 }
 
-.footerx2 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 60px;
-    flex-wrap: wrap;
-}
-
-.footer-item {
+.inspiracion-container h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    flex-basis: 250px;
+    padding: 0px 0 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(270deg, #5a2d1d, #8b5e3c, #c8a27a, #5a2d1d);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: movimiento 5s ease infinite;
+    margin: 0 auto 30px;
 }
 
-.footer-item p {
-    margin: 0;
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
+.inspiracion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
+<<<<<<< HEAD
 .footer-item img {
     filter: var(--filter-icon);
     width: 28px;
@@ -390,49 +510,240 @@ footer {
 }
 
 .contenido-img {
+=======
+.inspiracion-item {
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
     position: relative;
-    cursor: pointer;
     overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 260px;
 }
 
-.contenido-img:hover .text-over {
-    visibility: visible;
+.inspiracion-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.text-over {
+.inspiracion-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+}
+
+.inspiracion-item:hover img {
+    transform: scale(1.04);
+}
+
+.inspiracion-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
-    border-radius: 20px;
-    font-size: 22px;
+    right: 0;
+    background: linear-gradient(to top, rgba(71, 40, 37, 0.85), transparent);
+    color: #fff;
+    padding: 20px 18px 18px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.inspiracion-item:hover .inspiracion-overlay {
+    transform: translateY(0);
+}
+
+.inspiracion-overlay h3 {
+    margin: 0 0 4px;
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.inspiracion-overlay p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+/* ===================== MAS VENDIDO ===================== */
+
+.vendidos-section {
+    padding: 20px 0 50px;
+}
+
+.vendidos-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.vendidos-container h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 65px;
     font-weight: 400;
-    background-color: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(270deg, #5a2d1d, #8b5e3c, #c8a27a, #5a2d1d);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: movimiento 5s ease infinite;
+    margin: 0 auto 30px;
+}
+
+.vendidos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.vendidos-card {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vendidos-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.vendidos-img {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    padding: 12px 12px 0 12px;
+}
+
+.vendidos-img img {
     width: 100%;
-    height: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.45s ease;
+}
+
+.vendidos-card:hover .vendidos-img img {
+    transform: scale(1.03);
+}
+
+.vendidos-overlay {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.45);
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.vendidos-img:hover .vendidos-overlay {
+    opacity: 1;
+}
+
+.vendidos-overlay a {
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 22px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+<<<<<<< HEAD
+=======
+.vendidos-overlay a:hover {
+    background: #fff;
+    color: #472825;
+}
+
+.vendidos-info {
+    padding: 14px 16px 16px;
+    display: flex;
     flex-direction: column;
-    color: #fff;
-    opacity: .8;
-    visibility: hidden;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 1px;
+    flex: 1;
 }
 
-.text-over p {
+.vendidos-categoria {
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #999;
+    margin: 0 0 4px;
+}
+
+.vendidos-nombre {
+    font-size: 16px;
+    font-family: 'Anton', sans-serif;
+    color: #1f1f1f;
+    letter-spacing: 0.5px;
+    margin: 0 0 12px;
+}
+
+.vendidos-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.vendidos-precio {
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    color: #472825;
     margin: 0;
+    line-height: 1;
 }
 
-.text-over a {
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 1px;
+.vendidos-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1.5px solid #472825;
+    background: transparent;
+    color: #472825;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.vendidos-btn:hover {
+    background: #472825;
     color: #fff;
-    font-size: 22px;
-    font-weight: 400;
     text-decoration: none;
 }
 
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
 #boton-whatsapp {
     position: fixed;
     bottom: 75px;
@@ -487,6 +798,7 @@ footer {
 
 .flecha-arriba {
     filter: var(--filter-icon);
+<<<<<<< HEAD
 }
 
 #preloader {
@@ -738,40 +1050,65 @@ footer {
     flex-direction: column;
     gap: 30px;
     align-items: center;
-    justify-content: center;
+=======
 }
 
-.footer-item {
-    flex-basis: auto;
-    gap: 10px;
-    justify-content: center;
-    text-align: center;
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 300px;
+    height: 100%;
+    background: #fff;
+    display: flex;
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
 }
 
-.footer-item p {
-    font-size: 16px;
-    text-align: center;
+.logoCarga {
+    width: 150px;
+    animation: fade 1.5s infinite;
 }
 
-.footer-item img {
-    width: 26px;
-}
+@keyframes fade {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
 }
 
-@keyframes aparecer {
-from {
-    opacity: 0;
-    transform: scale(0.2);
+@media (max-width: 1200px) {
+    .destacados-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .inspiracion-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .vendidos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
-to {
-    opacity: 1;
-    transform: scale(1);
-}
+
+@media (max-width: 992px) {
+    .destacados-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inspiracion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vendidos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 640px) {
+<<<<<<< HEAD
 header {
     display: none;
 }
@@ -840,15 +1177,21 @@ nav {
 @keyframes fanimate {
     0% {
         background-position: 0% 50%;
+=======
+    .destacados-section {
+        padding-top: 90px;
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
     }
 
-    50% {
-        background-position: 100% 50%;
+    .destacados-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    100% {
-        background-position: 0% 50%;
+    .destacados-container {
+        width: 87%;
     }
+<<<<<<< HEAD
 }
     
 .menu-movil li {
@@ -857,19 +1200,18 @@ nav {
     padding: 0 0 15px 0;
     border-bottom: 2px solid #fff4E2;
 }
+=======
 
-.menu-movil li a {
-    color: #2b2b2b;
-    text-decoration: none;
-    font-size: 19px;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 1px;
-}
-    
-.mover {
-    left: 0px !important;
-}
+    .inspiracion-grid {
+        grid-template-columns: 1fr;
+    }
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
 
+    .inspiracion-item {
+        height: 200px;
+    }
+
+<<<<<<< HEAD
 .menu-mobil {
     position: fixed;
     top: 0;
@@ -1013,4 +1355,19 @@ nav {
 .footer-item img {
     width: 24px;
 }
+=======
+    .vendidos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .vendidos-container {
+        width: 87%;
+    }
+
+    .inspiracion-container h2,
+    .vendidos-container h2 {
+        font-size: 50px;
+    }
+>>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
 }
