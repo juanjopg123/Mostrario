@@ -1,14 +1,5 @@
 /* CSS Variables */
 :root {
-<<<<<<< HEAD
-  --filter-white: invert(100%) sepia(50%) saturate(275%) hue-rotate(320deg) brightness(105%) contrast(105%);
-  --filter-icon: brightness(0) saturate(100%) invert(99%) sepia(13%) saturate(19%) hue-rotate(352deg) brightness(106%) contrast(109%);
-  --filter-hover: invert(17%) sepia(21%) saturate(2352%) hue-rotate(321deg) brightness(96%) contrast(93%);
-}
-
-/* Global Styles */
-body, html {
-=======
     --filter-white: invert(100%) sepia(50%) saturate(275%) hue-rotate(320deg) brightness(105%) contrast(105%);
     --filter-icon: brightness(0) saturate(100%) invert(99%) sepia(13%) saturate(19%) hue-rotate(352deg) brightness(106%) contrast(109%);
     --filter-hover: invert(17%) sepia(21%) saturate(2352%) hue-rotate(321deg) brightness(96%) contrast(93%);
@@ -17,7 +8,6 @@ body, html {
 /* Global Styles */
 body,
 html {
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
     width: 100%;
     height: 100%;
     margin: 0;
@@ -25,15 +15,10 @@ html {
     background-image: url("../assets/8523857.png");
 }
 
-<<<<<<< HEAD
-header {
-    background-color: #472825;
-=======
 /* ===================== DESTACADOS ===================== */
 
 .destacados-section {
     padding: 30px 0;
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
 }
 
 .destacados-container {
@@ -41,188 +26,9 @@ header {
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
-.header-contacto li {
-    color: #fff;
-    font-size: 18px;
-}
-
-.header-contacto ul li {
-    display: inline-block;
-    list-style: none;
-    margin-right: 20px;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 0.5px;
-}
-
-.header-contacto {
-    display: inline-block;
-}
-
-i {
-    font-size: 25px;
-    filter: var(--filter-icon);
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-contacto img {
-    filter: var(--filter-white);
-}
-
-.header-contacto ul {
-    margin: 0;
-}
-
-.img-icon {
-    display: inline-block;
-}
-
-.img-icon img {
-    width: 150px;
-    filter: var(--filter-white);
-    display: inline-block;
-}
-
-.sub-header {
-    border-top: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
-    padding: 17px 0px;
-    align-items: center;
-    background-color: #472825;
-}
-
-.sub-header-content img {
-    width: 32px;
-    filter: var(--filter-white);
-    height: 32px;
-}
-
-.sub-header-content {
-    text-align: center;
-}
-
-.sub-header-content div {
-    transition: all 1s ease 0.1s;
-    mask-position: top;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    -webkit-mask-position: top;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    padding: 15px 15px 5px 15px;
-    text-align: center;
-}
-
-.sub-header-content ul li {
-    display: inline-block;
-    text-align: center;
-    padding: 0px 30px;
-    font-size: 16px;
-    transition: all 1s ease 0.1s;
-    color: black;
-}
-
-.sub-header-content ul li:hover {
-    background-color: #fff4e2;
-    transform: scale(1.1);
-    text-align: center;
-}
-
-.sub-header-content img:hover {
-    width: 32px;
-    filter: var(--filter-hover);
-    height: 32px;
-}
-
-.sub-header-content li a {
-    color: #fff4e2;
-    font-size: 18px;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: 'Anton', sans-serif;
-}
-
-.sub-header-content li a:hover {
-    color: #472825;
-    text-align: center;
-}
-
-.sub-header-content ul {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.sub-header-container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.section1 {
-    padding-top: 30px;
-}
-
-.seccion1 {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.text-princi {
-    transition: none 0s ease 0s;
-    opacity: 0;
-    transform: scale(0.2);
-    animation: aparecer 1s forwards;
-}
-
-.seccion1 h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-    max-width: 1190px;
-    margin: 0 auto 30px;
-    font-family: 'Anton', sans-serif;
-    font-size: 65px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background: linear-gradient(270deg, #5a2d1d, #8b5e3c, #c8a27a, #5a2d1d);
-    background-size: 300% 300%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-    animation: movimiento 5s ease infinite;
-}
-
-@keyframes movimiento {
-    from {
-        background-position: 0 0 ;
-    }
-
-    to {
-        background-position: 100% 100%;
-    }
-}
-
-.seccion-cuadros {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.galeria-sala {
-    display: flex;
-=======
 .destacados-titulo h2 {
     display: flex;
     align-items: center;
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
     justify-content: center;
     padding: 20px 0;
     margin: 0 auto 30px;
@@ -345,40 +151,6 @@ i {
 .destacados-footer {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1190px;
-    margin: 0 auto 30px;
-    padding: 20px 15px;
-    font-family: 'Anton', sans-serif;
-    font-size: 65px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background: linear-gradient(270deg, #5a2d1d, #8b5e3c, #c8a27a, #5a2d1d);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-    animation: movimiento 5s ease infinite;
-}
-
-.section1 img, .section2 img , .section3 img {
-    border-radius: 20px;
-    width: 100%;
-}
-
-.nombre {
-    margin: 10px 0 8px;
-    font-size: 22px;
-    color: #000;
-    font-family: 'Anton', sans-serif;
-}
-
-.descripcion {
-    margin: 10px 0;
-=======
     justify-content: space-between;
     margin-top: auto;
     padding-top: 12px;
@@ -386,7 +158,6 @@ i {
 }
 
 .destacados-precio {
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
     font-size: 20px;
     font-family: 'Anton', sans-serif;
     color: #472825;
@@ -394,18 +165,6 @@ i {
     line-height: 1;
 }
 
-<<<<<<< HEAD
-.precio {
-    margin: 10px 0;
-    font-size: 18px;
-    font-family: 'Anton', sans-serif;
-    color: #000;
-}
-
-footer {
-    background-color: #733E39;
-    padding: 25px 0;
-=======
 .destacados-btn {
     display: inline-flex;
     align-items: center;
@@ -427,7 +186,6 @@ footer {
     background: #472825;
     color: #fff;
     text-decoration: none;
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
 }
 
 /* ===================== INSPIRACION ===================== */
@@ -466,53 +224,7 @@ footer {
     gap: 20px;
 }
 
-<<<<<<< HEAD
-.footer-item img {
-    filter: var(--filter-icon);
-    width: 28px;
-    height: auto;
-}
-
-.copy {
-    border-top: 1px solid #e1e1e1;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 18px;
-    background-color: #733E39;
-    color: #9CA3AF;
-}
-
-.copy span {
-    color: #60A5FA;
-    font-weight: 600;
-}
-
-.copy p {
-    margin: 0;
-}
-
-#animado {
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.mostrarArriba {
-    animation: mostrarArriba 1s;
-}
-
-@keyframes mostrarArriba {
-    0% {
-        transform: translateX(60px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.contenido-img {
-=======
 .inspiracion-item {
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
     position: relative;
     overflow: hidden;
     border-radius: 16px;
@@ -672,8 +384,6 @@ footer {
     transition: background 0.2s, color 0.2s;
 }
 
-<<<<<<< HEAD
-=======
 .vendidos-overlay a:hover {
     background: #fff;
     color: #472825;
@@ -743,7 +453,6 @@ footer {
     text-decoration: none;
 }
 
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
 #boton-whatsapp {
     position: fixed;
     bottom: 75px;
@@ -798,7 +507,6 @@ footer {
 
 .flecha-arriba {
     filter: var(--filter-icon);
-<<<<<<< HEAD
 }
 
 #preloader {
@@ -809,259 +517,6 @@ footer {
     height: 100%;
     background: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease;
-}
-
-.logoCarga {
-    width: 150px;
-    animation: fade 1.5s infinite;
-}
-
-@keyframes fade {
-    0% { opacity: 0.3; }
-    50% { opacity: 1; }
-    100% { opacity: 0.3; }
-}
-
-/* Inspiración Visual */
-.inspiracion-visual {
-    padding: 30px 0;
-}
-
-.grid-inspiracion {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.item-inspiracion {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.item-inspiracion:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.item-inspiracion img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 15px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-}
-
-.item-inspiracion:hover .overlay {
-    transform: translateY(0);
-}
-
-.overlay h3 {
-    margin: 0 0 5px 0;
-    font-family: 'Anton', sans-serif;
-    font-size: 20px;
-}
-
-.overlay p {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-}
-
-@media (min-width: 1001px) and (max-width: 1440px) {
-
-.header-contacto ul {
-    margin: 0;
-    text-align: right;
-}
-
-.img-icon img {
-    width: 130px;
-    filter: var(--filter-icon);
-    display: inline-block;
-}
-    
-.seccion1 {
-    width: 93%;
-    margin: 0 auto;
-}
-
-.seccion-cuadros {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.imagen-grande img {
-  width: 435px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-    
-.seccion3 {
-    width: 93%;
-    margin: 0 auto;
-}
-
-.seccion-cuadros3 {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.parra-linea{
-    color: #999;
-    font-size: 14px;
-}
-
-/* Inspiración Visual */
-.grid-inspiracion {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.item-inspiracion {
-    height: 300px;
-}
-
-.item-inspiracion img {
-    height: 300px;
-}
-
-.overlay h3 {
-    font-size: 22px;
-}
-
-.overlay p {
-    font-size: 15px;
-}
-
-.footerx2 {
-    gap: 80px;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-}
-}
-
-@media (min-width: 641px) and (max-width: 1000px) {
-
-.header-contacto ul {
-    margin: 0;
-    text-align: right;
-}
-
-.img-icon img {
-    width: 130px;
-    filter: var(--filter-icon);
-    display: inline-block;
-}
-    
-.seccion1 {
-    width: 93%;
-    margin: 0 auto;
-}
-
-.seccion-cuadros {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.imagen-grande {
-    display: none;
-}
-
-.imagenes-pequenas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.imagenes-pequenas img {
-  width: 280px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-    
-.seccion3 {
-    width: 93%;
-    margin: 0 auto;
-}
-
-.seccion-cuadros3 {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.parra-linea{
-    color: #999;
-    font-size: 14px;
-}
-
-/* Inspiración Visual */
-.grid-inspiracion {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.item-inspiracion {
-    height: 280px;
-}
-
-.item-inspiracion img {
-    height: 280px;
-}
-
-.overlay {
-    padding: 12px;
-}
-
-.overlay h3 {
-    font-size: 18px;
-}
-
-.overlay p {
-    font-size: 13px;
-}
-
-.footerx2 {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-=======
-}
-
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    display: flex;
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
     justify-content: center;
     align-items: center;
     z-index: 9999;
@@ -1108,79 +563,8 @@ footer {
 }
 
 @media (max-width: 640px) {
-<<<<<<< HEAD
-header {
-    display: none;
-}
-    
-nav {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: #d9d9d9;
-    z-index: 100;
-}
-
-.iconos-menu {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    filter: var(--filter-white);
-    gap: 10px;
-}
-    
-.logo-hambur,
-.logo-error {
-    width: 30px;
-    cursor: pointer;
-    filter: var(--filter-white);
-}
-
-.logo-mob {
-    margin: 0;
-    filter: var(--filter-white);
-    width: 90px;
-}
-
-.nav-movil-container {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: #472825;
-    padding: 5px 25px;
-    position: relative;
-    z-index: 99;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-    
-.menu-movil {
-    position: fixed;
-    top: 60px;
-    left: 0%;
-    width: 100%;
-    height: 100vh;
-    animation: fanimate 5s infinite;
-    background-size: 500%;
-    background-color: #96786F;
-    padding: 30px;
-    z-index: 3;
-}
-
-@keyframes fanimate {
-    0% {
-        background-position: 0% 50%;
-=======
     .destacados-section {
         padding-top: 90px;
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
     }
 
     .destacados-grid {
@@ -1191,171 +575,15 @@ nav {
     .destacados-container {
         width: 87%;
     }
-<<<<<<< HEAD
-}
-    
-.menu-movil li {
-    list-style: none;
-    margin-bottom: 20px;
-    padding: 0 0 15px 0;
-    border-bottom: 2px solid #fff4E2;
-}
-=======
 
     .inspiracion-grid {
         grid-template-columns: 1fr;
     }
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
 
     .inspiracion-item {
         height: 200px;
     }
 
-<<<<<<< HEAD
-.menu-mobil {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 18px 18px 18px 0;
-}
-    
-.logo {
-    margin: 0px;
-    width: 80px;
-}
-
-.img-icon img {
-    width: 100px;
-    filter: var(--filter-icon);
-    display: inline-block;
-}
-    
-.sub-header {
-    display: none;
-}
-    
-.section1 {
-    padding-top: 90px;
-}
-
-.seccion1 {
-    width: 87%;
-    margin: 0 auto;
-}
-
-.seccion-cuadros {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-}
-
-.galeria-sala {
-    display: none;
-}
-
-.section3 {
-    padding: 20px 0px;
-}
-
-.seccion3 {
-    width: 87%;
-    margin: 0 auto;
-}
-
-.seccion-cuadros3 {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-}
-
-.seccion3 h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 15px;
-    flex-wrap: wrap;
-    max-width: 1190px;
-    margin: 0 auto 20px;
-    line-height: 1;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 65px;
-    letter-spacing: 2px;
-    width: 100%;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-    font-family: 'Anton', sans-serif;
-    background: linear-gradient(270deg, #5a2d1d, #8b5e3c, #c8a27a, #5a2d1d);
-    animation: movimiento 5s ease infinite;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300% 300%;
-}
-
-.parra-linea{
-    color: #2b2b2b;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-/* Inspiración Visual */
-.grid-inspiracion {
-    grid-template-columns: 1fr;
-}
-
-.item-inspiracion {
-    height: 200px;
-}
-
-.item-inspiracion img {
-    height: 200px;
-}
-
-.overlay {
-    padding: 10px;
-}
-
-.overlay h3 {
-    font-size: 16px;
-    margin-bottom: 3px;
-}
-
-.overlay p {
-    font-size: 12px;
-}
-    
-.footer {
-    width: 95%;
-    padding: 20px 0;
-}
-
-.footerx2 {
-    flex-direction: column;
-    gap: 25px;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-item {
-    flex-basis: auto;
-    gap: 8px;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    max-width: 280px;
-}
-
-.footer-item p {
-    font-size: 14px;
-    text-align: center;
-}
-
-.footer-item img {
-    width: 24px;
-}
-=======
     .vendidos-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1369,5 +597,4 @@ nav {
     .vendidos-container h2 {
         font-size: 50px;
     }
->>>>>>> e4f032d (Nueva Version de Mostrario Muebles)
 }
