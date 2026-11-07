@@ -2,43 +2,50 @@
 <html lang="es">
 
 <head>
+    <!-- Meta básicos -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Mostrario</title>
+    <!-- SEO -->
     <meta name="description"
         content="Mostrario - Tienda de muebles en Itagüí. Sofás, salas, camas, comedores y más. Calidad y diseño a precios accesibles.">
-    <meta name="keywords" content="muebles, sofás, salas, camas, comedores, Itagüí, mostrario">
+    <!-- Color barra del navegador en móvil -->
+    <meta name="theme-color" content="#472825">
+    <!-- Vista previa al compartir en redes -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mostrario - Muebles en Itagüí">
+    <meta property="og:description"
+        content="Sofás, salas, camas, comedores y más. Calidad y diseño a precios accesibles.">
+    <meta property="og:image" content="https://mostrario-abc67.web.app/assets/logo.png">
+    <meta property="og:locale" content="es_CO">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/iconnegro.png" type="image/png">
+    <link rel="apple-touch-icon" href="./assets/iconnegro.png">
+    <!-- Preconnect CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+    <link rel="preconnect" href="https://ajax.googleapis.com">
+    <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
-    <title>Inicio - Mostrario</title>
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <script src="./js/custom.js" defer></script>
-    <link rel="icon" href="./assets/iconnegro.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    <!-- Fuentes: Anton + Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <!-- JS -->
     <script src="https://kit.fontawesome.com/6e9e7e3823.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="./js/custom.js" defer></script>
+    <script src="./js/Modal.js" defer></script>
 </head>
 
 <body>
-
     <button id="btn-ir-arriba"><i class="fa-solid fa-angle-up"></i></button>
-
     <div id="preloader">
         <img src="./assets/iconnegro.png" alt="Cargando Mostrario" class="logoCarga">
     </div>
-
     <nav class="nav-movil">
         <div class="nav-movil-container">
             <a href="./index.html"><img class="logo-mob" src="./assets/iconnegro.png" alt="Logo Mostrario"></a>
@@ -132,7 +139,7 @@
                             <p class="destacados-nombre">Sala Venecia</p>
                             <div class="destacados-footer">
                                 <p class="destacados-precio">$3.200.000</p>
-                                <a href="detalle.html?id=salavenecia" class="destacados-btn">Ver más →</a>
+                                <a href="#modal-1" class="destacados-btn" data-modal="modal-1">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -152,7 +159,26 @@
                             <p class="destacados-nombre">Sofá Chester Brazo Redondo</p>
                             <div class="destacados-footer">
                                 <p class="destacados-precio">$2.400.000</p>
-                                <a href="detalle.html?id=sofachesterbrazosredondos" class="destacados-btn">Ver más →</a>
+                                <a href="#modal-2" class="destacados-btn" data-modal="modal-2">Ver más →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destacados-card">
+                        <div class="destacados-img">
+                            <a href="./productos.html?categoria=sofas">
+                                <img src="./upload/sofa-chester-normal.jpg" alt="Sofá Chester 2 Puestos" loading="lazy">
+                            </a>
+                            <div class="destacados-overlay">
+                                <a href="detalle.html?id=sofachester2">Ver producto</a>
+                            </div>
+                        </div>
+                        <div class="destacados-info">
+                            <p class="destacados-categoria">Sofás</p>
+                            <p class="destacados-nombre">Sofá Chester 2 Puestos</p>
+                            <div class="destacados-footer">
+                                <p class="destacados-precio">$1.600.000</p>
+                                <a href="#modal-3" class="destacados-btn" data-modal="modal-3">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -171,7 +197,7 @@
                             <p class="destacados-nombre">Comedor Lord Alto</p>
                             <div class="destacados-footer">
                                 <p class="destacados-precio">$2.600.000</p>
-                                <a href="detalle.html?id=comedorlordalto" class="destacados-btn">Ver más →</a>
+                                <a href="#modal-4" class="destacados-btn" data-modal="modal-4">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -191,7 +217,7 @@
                             <p class="destacados-nombre">Sala Chester 3 Puestos</p>
                             <div class="destacados-footer">
                                 <p class="destacados-precio">$2.600.000</p>
-                                <a href="detalle.html?id=salachester3puestos" class="destacados-btn">Ver más →</a>
+                                <a href="#modal-5" class="destacados-btn" data-modal="modal-5">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -211,8 +237,7 @@
                             <p class="destacados-nombre">Esquinero Cojines Decorativos</p>
                             <div class="destacados-footer">
                                 <p class="destacados-precio">$2.000.000</p>
-                                <a href="detalle.html?id=esquinerocojinesdecorativos" class="destacados-btn">Ver más
-                                    →</a>
+                                <a href="#modal-6" class="destacados-btn" data-modal="modal-6">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -232,7 +257,7 @@
                             <p class="destacados-nombre">Espaldar Berlin Capitoneado</p>
                             <div class="destacados-footer">
                                 <p class="destacados-precio">$600.000</p>
-                                <a href="detalle.html?id=espaldarberlincapitoneado" class="destacados-btn">Ver más →</a>
+                                <a href="#modal-7" class="destacados-btn" data-modal="modal-7">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -251,7 +276,7 @@
                             <p class="destacados-nombre">Comedor Hueco</p>
                             <div class="destacados-footer">
                                 <p class="destacados-precio">$2.400.000</p>
-                                <a href="detalle.html?id=comedorhueco" class="destacados-btn">Ver más →</a>
+                                <a href="#modal-8" class="destacados-btn" data-modal="modal-8">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -270,7 +295,7 @@
                             <p class="destacados-nombre">Sofá Puntos</p>
                             <div class="destacados-footer">
                                 <p class="destacados-precio">$1.100.000</p>
-                                <a href="detalle.html?id=sofapuntos" class="destacados-btn">Ver más →</a>
+                                <a href="#modal-9" class="destacados-btn" data-modal="modal-9">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -329,31 +354,56 @@
             </div>
         </section>
 
+        <section class="slider">
+            <div class="slider_container container_slider">
+                <img src="assets/left.svg" alt="" class="slider_arrow" id="before">
+
+                <section class="slider_body slider_body--show" data-id="1">
+                    <div class="slider_text">
+                        <h2 class="subtitle">Nuestros Productos</h2>
+                        <p class="slider_review">Descubre nuestra amplia gama de productos de alta calidad y diseño
+                            moderno.
+                        </p>
+                    </div>
+                    <figure class="slider_picture">
+                        <img src="upload/espaldar-puntiado.jpg" alt="" class="slider_img">
+                    </figure>
+                </section>
+
+                <section class="slider_body" data-id="2">
+                    <div class="slider_text">
+                        <h2 class="subtitle">Nuestros Productos</h2>
+                        <p class="slider_review">Descubre nuestra amplia gama de productos de alta calidad y diseño
+                            moderno.
+                        </p>
+                    </div>
+                    <figure class="slider_picture">
+                        <img src="upload/silla-redonda.jpg" alt="" class="slider_img">
+                    </figure>
+                </section>
+
+                <section class="slider_body" data-id="3">
+                    <div class="slider_text">
+                        <h2 class="subtitle">Nuestros Productos</h2>
+                        <p class="slider_review">Descubre nuestra amplia gama de productos de alta calidad y diseño
+                            moderno.
+                        </p>
+                    </div>
+                    <figure class="slider_picture">
+                        <img src="upload/Cama isabela capitoneada-2.jpg" alt="" class="slider_img">
+                    </figure>
+                </section>
+
+                <img src="assets/right.svg" alt="" class="slider_arrow" id="next">
+            </div>
+        </section>
+
         <section class="vendidos-section">
             <div class="vendidos-container">
                 <div id="animado">
                     <h2>Lo más vendido</h2>
                 </div>
                 <div class="vendidos-grid">
-
-                    <div class="vendidos-card">
-                        <div class="vendidos-img">
-                            <a href="./productos.html?categoria=sofas">
-                                <img src="./upload/sofa-chester-normal.jpg" alt="Sofá Chester 2 Puestos" loading="lazy">
-                            </a>
-                            <div class="vendidos-overlay">
-                                <a href="detalle.html?id=sofachester2">Ver producto</a>
-                            </div>
-                        </div>
-                        <div class="vendidos-info">
-                            <p class="vendidos-categoria">Sofás</p>
-                            <p class="vendidos-nombre">Sofá Chester 2 Puestos</p>
-                            <div class="vendidos-footer">
-                                <p class="vendidos-precio">$1.600.000</p>
-                                <a href="detalle.html?id=sofachester2" class="vendidos-btn">Ver más →</a>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="vendidos-card">
                         <div class="vendidos-img">
@@ -369,7 +419,7 @@
                             <p class="vendidos-nombre">Sofá Cama Carrito</p>
                             <div class="vendidos-footer">
                                 <p class="vendidos-precio">$1.600.000</p>
-                                <a href="detalle.html?id=sofacarrito" class="vendidos-btn">Ver más →</a>
+                                <a href="#modal-10" class="vendidos-btn" data-modal="modal-10">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -388,7 +438,7 @@
                             <p class="vendidos-nombre">Cama Bastidores</p>
                             <div class="vendidos-footer">
                                 <p class="vendidos-precio">$1.400.000</p>
-                                <a href="detalle.html?id=camabastidores" class="vendidos-btn">Ver más →</a>
+                                <a href="#modal-11" class="vendidos-btn" data-modal="modal-11">Ver más →</a>
                             </div>
                         </div>
                     </div>
@@ -407,17 +457,121 @@
                             <p class="vendidos-nombre">Silla Redonda</p>
                             <div class="vendidos-footer">
                                 <p class="vendidos-precio">$1.400.000</p>
-                                <a href="detalle.html?id=sillaredonda" class="vendidos-btn">Ver más →</a>
+                                <a href="#modal-12" class="vendidos-btn" data-modal="modal-12">Ver más →</a>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-    </main>
+        <section class="modal" id="modal-1">
+            <div class="modal_container">
+                <img src="/upload/sala venecia.jpg" alt="" class="modal_img">
+                <h2 class="modal_title">Sala Venecia</h2>
+                <p class="modal_paragraph">Sofa + 2 Sillas</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
 
+        <section class="modal" id="modal-2">
+            <div class="modal_container">
+                <img src="/upload/cama-bastidores.png" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 2</h2>
+                <p class="modal_paragraph">Contenido del producto 2</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-3">
+            <div class="modal_container">
+                <img src="/upload/sofa-chester-normal.jpg" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 3</h2>
+                <p class="modal_paragraph">Contenido del producto 3</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-4">
+            <div class="modal_container">
+                <img src="/upload/Cama Bastidores-4.jpg" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 4</h2>
+                <p class="modal_paragraph">Contenido del producto 4</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-5">
+            <div class="modal_container">
+                <img src="/upload/cama-bastidores.png" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 5</h2>
+                <p class="modal_paragraph">Contenido del producto 5</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-6">
+            <div class="modal_container">
+                <img src="/upload/sofa-chester-normal.jpg" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 6</h2>
+                <p class="modal_paragraph">Contenido del producto 6</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-7">
+            <div class="modal_container">
+                <img src="/upload/Cama Bastidores-4.jpg" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 7</h2>
+                <p class="modal_paragraph">Contenido del producto 7</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-8">
+            <div class="modal_container">
+                <img src="/upload/cama-bastidores.png" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 8</h2>
+                <p class="modal_paragraph">Contenido del producto 8</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-9">
+            <div class="modal_container">
+                <img src="/upload/sofa-chester-normal.jpg" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 9</h2>
+                <p class="modal_paragraph">Contenido del producto 9</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-10">
+            <div class="modal_container">
+                <img src="/upload/Cama Bastidores-4.jpg" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 10</h2>
+                <p class="modal_paragraph">Contenido del producto 10</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-11">
+            <div class="modal_container">
+                <img src="/upload/cama-bastidores.png" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 11</h2>
+                <p class="modal_paragraph">Contenido del producto 11</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
+
+        <section class="modal" id="modal-12">
+            <div class="modal_container">
+                <img src="/upload/sofa-chester-normal.jpg" alt="" class="modal_img">
+                <h2 class="modal_title">Modal 12</h2>
+                <p class="modal_paragraph">Contenido del producto 12</p>
+                <a href="#" class="modal_close">Cerrar Modal</a>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -449,7 +603,6 @@
     <a href="https://api.whatsapp.com/send?phone=573052792408" target="_blank" id="boton-whatsapp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-
     <a href="https://www.instagram.com/muebless_1059/" target="_blank" id="boton-instagram">
         <img src="./assets/instagram.png" alt="" class="btn-instagram">
     </a>

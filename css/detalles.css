@@ -1,4 +1,3 @@
-/* VARIABLES */
 :root {
     --primary: #472825;
     --primary-mid: #733E39;
@@ -59,14 +58,14 @@ body {
 .detalle-container {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
-    gap: 56px;
+    gap: 30px;
     align-items: start;
     background: var(--surface);
     backdrop-filter: blur(22px) saturate(1.6);
     -webkit-backdrop-filter: blur(22px) saturate(1.6);
     border: 1px solid rgba(255, 255, 255, 0.55);
     border-radius: var(--radius-xl);
-    padding: 48px;
+    padding: 40px;
     box-shadow: var(--shadow-lg);
 }
 
@@ -92,7 +91,6 @@ body {
 .imagen-principal img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     transition: transform var(--transition);
     display: block;
 }
@@ -446,7 +444,7 @@ body {
     background-color: #876c64;
 }
 
-@media (max-width:1200px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .detalle-container {
         gap: 42px;
     }
@@ -458,9 +456,7 @@ body {
     .imagen-principal {
         height: 520px;
     }
-}
 
-@media (max-width:992px) {
     .detalle-container {
         grid-template-columns: 1fr;
         padding: 36px;
@@ -501,7 +497,7 @@ body {
 
 @media (max-width:768px) {
     .sesion2 {
-        padding: 36px 0 70px;
+        padding: 100px 0 70px;
     }
 
     .sec {
@@ -509,49 +505,42 @@ body {
     }
 
     .detalle-container {
-        padding: 26px;
+        padding: 20px;
+        border-radius: var(--radius-lg);
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .detalle-galeria {
+        position: static;
+    }
+
+    .imagen-principal img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        transition: transform var(--transition);
+        display: block;
     }
 
     .detalle-titulo {
         font-size: 42px;
+        line-height: 1.12;
     }
 
     .precio-valor {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .imagen-principal {
+        border-radius: var(--radius-md);
         height: 400px;
     }
 
     .miniatura {
         width: 80px;
         height: 80px;
-    }
-}
-
-@media (max-width:640px) {
-    .sesion2 {
-        padding: 100px 0 60px;
-    }
-
-    .sec {
-        width: 95%;
-    }
-
-    .detalle-container {
-        padding: 20px;
-        border-radius: var(--radius-lg);
-        gap: 26px;
-    }
-
-    .detalle-titulo {
-        font-size: 34px;
-        line-height: 1.12;
-    }
-
-    .precio-valor {
-        font-size: 34px;
+        border-radius: var(--radius-xs);
     }
 
     .precio-signo {
@@ -562,19 +551,8 @@ body {
         font-size: 14.5px;
     }
 
-    .imagen-principal {
-        height: 290px;
-        border-radius: var(--radius-md);
-    }
-
     .miniaturas-container {
         gap: 10px;
-    }
-
-    .miniatura {
-        width: 70px;
-        height: 70px;
-        border-radius: var(--radius-xs);
     }
 
     .detalle-botones {

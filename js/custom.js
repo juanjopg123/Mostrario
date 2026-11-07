@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $(window).scroll(function() {
+$(document).ready(function () {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('#btn-ir-arriba').fadeIn();
     } else {
@@ -7,13 +7,13 @@ $(document).ready(function() {
     }
   });
 
-  $('#btn-ir-arriba').click(function() {
-    $('html, body').animate({scrollTop : 0}, 800);
+  $('#btn-ir-arriba').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 800);
     return false;
   });
 
 
-  $('.img2').click(function() {
+  $('.img2').click(function () {
     var imagenGrande = $('#img').attr('src');
     var imagenPequena = $(this).attr('src');
     $('#img').attr('src', imagenPequena);
@@ -23,55 +23,55 @@ $(document).ready(function() {
 
 
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     $(".menu-movil").hide();
 
-    $(".nav-movil-container .logo-hambur").click(function() {
-        $(".menu-movil").slideToggle();
-        $(".nav-movil-container .logo-hambur").toggle();
-        $(".nav-movil-container .logo-error").toggle();
+    $(".nav-movil-container .logo-hambur").click(function () {
+      $(".menu-movil").slideToggle();
+      $(".nav-movil-container .logo-hambur").toggle();
+      $(".nav-movil-container .logo-error").toggle();
     });
 
-    $(".nav-movil-container .logo-error").click(function() {
-        $(".menu-movil").slideToggle();
-        $(".nav-movil-container .logo-hambur").toggle();
-        $(".nav-movil-container .logo-error").toggle();
+    $(".nav-movil-container .logo-error").click(function () {
+      $(".menu-movil").slideToggle();
+      $(".nav-movil-container .logo-hambur").toggle();
+      $(".nav-movil-container .logo-error").toggle();
     });
 
-    $(".menu-movil li").click(function() {
-        $(".menu-movil").slideUp();
-        $(".nav-movil-container .logo-hambur").show();
-        $(".nav-movil-container .logo-error").hide();
+    $(".menu-movil li").click(function () {
+      $(".menu-movil").slideUp();
+      $(".nav-movil-container .logo-hambur").show();
+      $(".nav-movil-container .logo-error").hide();
     });
-});
-  
+  });
 
-$("li a").hover(
-  function() {
-    $(this).addClass("hover");
-  },
-  function() {
-    $(this).removeClass("hover");
-  }
-);
 
-$("#login").submit(function(e){    
-  e.preventDefault();
-  var user = $("#userr").val();
-  var pass = $("#psss").val();
-  $.ajax({
-      data: {user: user, pass: pass},
+  $("li a").hover(
+    function () {
+      $(this).addClass("hover");
+    },
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+
+  $("#login").submit(function (e) {
+    e.preventDefault();
+    var user = $("#userr").val();
+    var pass = $("#psss").val();
+    $.ajax({
+      data: { user: user, pass: pass },
       url: 'php/login_panel.php',
       type: 'post',
-      success: function(response){
-          if(response == 2){
-              window.location.href = 'formulario.php';
-          } else {
-              alert(response);
-          }
+      success: function (response) {
+        if (response == 2) {
+          window.location.href = 'formulario.php';
+        } else {
+          alert(response);
+        }
       }
+    });
   });
-});
 });
 
 function mostrarScroll() {
@@ -89,11 +89,38 @@ function mostrarScroll() {
 window.addEventListener('scroll', mostrarScroll);
 
 // Preloader Cargar Logo
-window.addEventListener("load", function() {
-  setTimeout(function() {
+window.addEventListener("load", function () {
+  setTimeout(function () {
     document.getElementById("preloader").style.opacity = "0";
     setTimeout(() => {
       document.getElementById("preloader").style.display = "none";
     }, 500);
   }, 1000);
 });
+
+(function () {
+  const sliders = [...document.querySelectorAll(".slider_body")];
+  const arrowNext = document.querySelector("#next");
+  const arrowBefore = document.querySelector("#before");
+
+  if (!arrowNext || !arrowBefore || sliders.length === 0) return;
+
+  const showSlide = (index) => {
+    sliders.forEach((slider, i) => {
+      slider.classList.toggle("slider_body--show", i === index);
+    });
+  };
+
+  const changePosition = (change) => {
+    const currentElement = Number(document.querySelector(".slider_body--show")?.dataset.id || 1);
+    let nextIndex = currentElement + change;
+
+    if (nextIndex < 1) nextIndex = sliders.length;
+    if (nextIndex > sliders.length) nextIndex = 1;
+
+    showSlide(nextIndex - 1);
+  };
+
+  arrowNext.addEventListener("click", () => changePosition(1));
+  arrowBefore.addEventListener("click", () => changePosition(-1));
+})();
